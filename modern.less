@@ -1,0 +1,80 @@
+// colors
+@background-color: #eee;
+@blue: #0074d9;
+@border-color: #bbb;
+@text-color: #222;
+
+// fonts
+@body-font: Helvetica, sans-serif;
+@heading-font: Georgia, serif;
+
+body {
+  font-family: @body-font;
+  font-size: 20px;
+  color: @text-color;
+  padding: 25px;
+  background-color: @background-color;
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @heading-font;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+footer {
+  font-size: 80%;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border: solid @border-color 1px;
+}
+
+.modern-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.modern-button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  background-color: #c6c6c6;
+  text-decoration: none;
+  border-radius: 5px;
+  color: @text-color;
+  transition: 0.25s;
+  
+  &:hover {
+    text-decoration: none;
+    transition: 0.25s;
+    background-color: #ddd;
+  }
+ 
+  &:active {
+    transition: 0.25s;
+    background-color: #999;
+  }
+}
+
+.modern-responsive-table {
+  width: 100%;
+  overflow-x: auto;
+}
